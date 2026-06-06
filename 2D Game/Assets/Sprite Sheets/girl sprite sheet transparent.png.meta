@@ -154,12 +154,12 @@ TextureImporter:
       name: girl sprite sheet transparent_0
       rect:
         serializedVersion: 2
-        x: 287
-        y: 781
-        width: 70
-        height: 83
+        x: 170
+        y: 105
+        width: 120
+        height: 165
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -176,12 +176,12 @@ TextureImporter:
       name: girl sprite sheet transparent_1
       rect:
         serializedVersion: 2
-        x: 390
-        y: 781
-        width: 83
-        height: 83
+        x: 307
+        y: 106
+        width: 111
+        height: 163
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -198,12 +198,12 @@ TextureImporter:
       name: girl sprite sheet transparent_2
       rect:
         serializedVersion: 2
-        x: 506
-        y: 781
-        width: 97
-        height: 83
+        x: 440
+        y: 102
+        width: 120
+        height: 168
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -220,12 +220,12 @@ TextureImporter:
       name: girl sprite sheet transparent_3
       rect:
         serializedVersion: 2
-        x: 636
-        y: 781
-        width: 83
-        height: 83
+        x: 580
+        y: 106
+        width: 133
+        height: 164
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -242,12 +242,12 @@ TextureImporter:
       name: girl sprite sheet transparent_4
       rect:
         serializedVersion: 2
-        x: 145
-        y: 535
-        width: 121
-        height: 161
+        x: 728
+        y: 108
+        width: 124
+        height: 162
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -260,297 +260,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: girl sprite sheet transparent_5
-      rect:
-        serializedVersion: 2
-        x: 287
-        y: 535
-        width: 121
-        height: 151
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 73ba56ddfd25dc040800000000000000
-      internalID: 4669479510098684727
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: girl sprite sheet transparent_6
-      rect:
-        serializedVersion: 2
-        x: 429
-        y: 546
-        width: 161
-        height: 161
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: add7f10a8207f31b0800000000000000
-      internalID: -5674693685676114470
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: girl sprite sheet transparent_7
-      rect:
-        serializedVersion: 2
-        x: 611
-        y: 535
-        width: 121
-        height: 151
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b4ba8e281215e70f0800000000000000
-      internalID: -1117366453169247413
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: girl sprite sheet transparent_8
-      rect:
-        serializedVersion: 2
-        x: 753
-        y: 535
-        width: 121
-        height: 161
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ecd37038fd029e390800000000000000
-      internalID: -7788657936212476466
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: girl sprite sheet transparent_9
-      rect:
-        serializedVersion: 2
-        x: 292
-        y: 333
-        width: 137
-        height: 83
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 358b17eb82f062b20800000000000000
-      internalID: 3109189260414138451
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: girl sprite sheet transparent_10
-      rect:
-        serializedVersion: 2
-        x: 449
-        y: 333
-        width: 83
-        height: 83
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8eec4d178aae4b440800000000000000
-      internalID: 4950839899572195048
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: girl sprite sheet transparent_11
-      rect:
-        serializedVersion: 2
-        x: 565
-        y: 333
-        width: 70
-        height: 83
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 59fa95e3619ca2720800000000000000
-      internalID: 2822289213873565589
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: girl sprite sheet transparent_12
-      rect:
-        serializedVersion: 2
-        x: 654
-        y: 333
-        width: 97
-        height: 83
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ca713afec7fa90fb0800000000000000
-      internalID: -4681017386543671380
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: girl sprite sheet transparent_13
-      rect:
-        serializedVersion: 2
-        x: 169
-        y: 109
-        width: 121
-        height: 161
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1baa5533b4125b540800000000000000
-      internalID: 5022957566269172401
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: girl sprite sheet transparent_14
-      rect:
-        serializedVersion: 2
-        x: 309
-        y: 109
-        width: 111
-        height: 161
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 265eeb15b756390a0800000000000000
-      internalID: -6876040625737767582
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: girl sprite sheet transparent_15
-      rect:
-        serializedVersion: 2
-        x: 439
-        y: 109
-        width: 121
-        height: 161
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f61d7918d30601930800000000000000
-      internalID: 4111892277072744815
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: girl sprite sheet transparent_16
-      rect:
-        serializedVersion: 2
-        x: 579
-        y: 109
-        width: 131
-        height: 161
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: bea8a0437f6190ce0800000000000000
-      internalID: -1438593354982323477
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: girl sprite sheet transparent_17
-      rect:
-        serializedVersion: 2
-        x: 729
-        y: 109
-        width: 121
-        height: 161
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: fa61ac85c0b611160800000000000000
-      internalID: 6994489397056509615
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: aa22692a2c19db54dbb6423b32821b37
     internalID: 0
     vertices: []
     indices: 
@@ -558,26 +272,15 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":5.0,"y":1.0},"gridSpriteSize":{"x":200.0,"y":1000.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       girl sprite sheet transparent_0: -2521154737440300261
       girl sprite sheet transparent_1: 6646392373538604322
-      girl sprite sheet transparent_10: 4950839899572195048
-      girl sprite sheet transparent_11: 2822289213873565589
-      girl sprite sheet transparent_12: -4681017386543671380
-      girl sprite sheet transparent_13: 5022957566269172401
-      girl sprite sheet transparent_14: -6876040625737767582
-      girl sprite sheet transparent_15: 4111892277072744815
-      girl sprite sheet transparent_16: -1438593354982323477
-      girl sprite sheet transparent_17: 6994489397056509615
       girl sprite sheet transparent_2: -2755723242663429058
       girl sprite sheet transparent_3: 1422518150820263345
       girl sprite sheet transparent_4: -5402061366008668154
-      girl sprite sheet transparent_5: 4669479510098684727
-      girl sprite sheet transparent_6: -5674693685676114470
-      girl sprite sheet transparent_7: -1117366453169247413
-      girl sprite sheet transparent_8: -7788657936212476466
-      girl sprite sheet transparent_9: 3109189260414138451
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
