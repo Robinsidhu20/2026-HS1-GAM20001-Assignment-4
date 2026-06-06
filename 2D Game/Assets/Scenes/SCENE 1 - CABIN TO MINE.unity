@@ -2078,7 +2078,7 @@ MonoBehaviour:
   player: {fileID: 2122911251}
   smoothSpeed: 5
   offset: {x: 1, y: 1, z: -10}
-  lookAheadDistance: 10
+  lookAheadDistance: 5
   lookAheadSmooth: 5
   minX: 0
   maxX: 153.6
