@@ -437,7 +437,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 19.2, y: 0.75}
+  m_Size: {x: 19.2, y: 1}
   m_EdgeRadius: 0
 --- !u!1 &228784067
 GameObject:
@@ -757,7 +757,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 19.2, y: 0.75}
+  m_Size: {x: 19.2, y: 1}
   m_EdgeRadius: 0
 --- !u!1 &807586847
 GameObject:
@@ -895,7 +895,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 19.2, y: 0.75}
+  m_Size: {x: 19.2, y: 1}
   m_EdgeRadius: 0
 --- !u!1 &868996426
 GameObject:
@@ -1161,7 +1161,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 19.2, y: 0.75}
+  m_Size: {x: 19.2, y: 1}
   m_EdgeRadius: 0
 --- !u!1 &1134727426
 GameObject:
@@ -1299,7 +1299,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 19.2, y: 0.75}
+  m_Size: {x: 19.2, y: 1}
   m_EdgeRadius: 0
 --- !u!1 &1252943760
 GameObject:
@@ -1516,6 +1516,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69ba54f5ae2738640938e43245da66e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Player_Movement
+  _animator: {fileID: 0}
   rb: {fileID: 1562969862}
   groundCheck: {fileID: 1954558427}
   groundLayer:
@@ -1559,7 +1560,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.2, y: 1.65}
+    oldSize: {x: 1.2, y: 1.54}
     newSize: {x: 0.7, y: 0.83}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -1662,7 +1663,7 @@ Transform:
   m_GameObject: {fileID: 1562969858}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.37, y: -2.95, z: 0}
+  m_LocalPosition: {x: -8.74, y: -3.2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1805,7 +1806,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 19.2, y: 0.75}
+  m_Size: {x: 19.2, y: 1}
   m_EdgeRadius: 0
 --- !u!1 &1954558426
 GameObject:
