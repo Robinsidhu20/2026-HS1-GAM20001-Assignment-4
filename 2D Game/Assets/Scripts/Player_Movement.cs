@@ -4,6 +4,7 @@ using UnityEngine.InputSystem;
 
 public class Player_Movement : MonoBehaviour
 {
+    [SerializeField] private Animator _animator;
     private float horizontal;
     private Vector2 moveInput;
     private float speed = 8f;
@@ -46,6 +47,19 @@ public class Player_Movement : MonoBehaviour
     {
         moveInput = moveAction.ReadValue<Vector2>();
         horizontal = moveInput.x;
+
+        if (horizontal != 0f)
+        {
+            _animator.SetBool("isRunning", true);
+        }
+        else
+        {
+            _animator.SetBool("isRunning", false);
+        }
+
+        bool isAirborne = !IsGrounded();
+        _animator.SetBool("isJumping", isAirborne);
+
         Flip();
     }
 
