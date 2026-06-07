@@ -669,6 +669,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3818226938552317123, guid: d9d0016c1687053468820270943c98e0, type: 3}
+      propertyPath: rightBound
+      value: 104
+      objectReference: {fileID: 0}
     - target: {fileID: 8076503155195040615, guid: d9d0016c1687053468820270943c98e0, type: 3}
       propertyPath: m_Name
       value: Player
@@ -1045,6 +1049,11 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!4 &888938479 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1831221904918191444, guid: d9d0016c1687053468820270943c98e0, type: 3}
+  m_PrefabInstance: {fileID: 597940333}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &903623134
 GameObject:
   m_ObjectHideFlags: 0
@@ -1813,7 +1822,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 281aa1bd8fd40574491859f13e44cca9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CameraFollow
-  player: {fileID: 0}
+  player: {fileID: 888938479}
   smoothSpeed: 5
   offset: {x: 1, y: 1, z: -10}
   lookAheadDistance: 5
