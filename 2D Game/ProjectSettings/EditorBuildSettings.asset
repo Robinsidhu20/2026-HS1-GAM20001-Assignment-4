@@ -11,19 +11,22 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MAIN MENU.unity
     guid: 42b218900940e2747a87a05342af5551
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/CUTSCENE 1 - INTRO.unity
     guid: ac65ba307a4affe429f8d9e110571729
   - enabled: 1
+    path: Assets/Scenes/PROLOGUE.unity
+    guid: d23ee3978056a7248bef85f0d07b2d33
+  - enabled: 1
     path: Assets/Scenes/SCENE 1 - CABIN TO MINE.unity
     guid: 33ad78245128cba45814a093be92fa57
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/CUTSCENE 2 - ENTERING MINE.unity
     guid: 15ffcb2307e8f1d42acec5b05710981b
   - enabled: 1
     path: Assets/Scenes/SCENE 2 - INSIDE MINE.unity
     guid: 14cb3863723842b4fa8d7dff81e2c5ee
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/CUTSCENE 3 - MINE PORTAL.unity
     guid: fd34c9e42b6486148aa0971a521a4b1c
   m_configObjects:
