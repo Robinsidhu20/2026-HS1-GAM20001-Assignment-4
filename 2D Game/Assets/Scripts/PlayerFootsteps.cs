@@ -54,6 +54,10 @@ public class PlayerFootsteps : MonoBehaviour
         if (DialogueManager.Instance != null && DialogueManager.Instance.IsDialogueActive)
             shouldPlay = false;
 
+        // Stay silent while paused
+        if (Time.timeScale == 0f)
+            shouldPlay = false;
+
         if (shouldPlay)
         {
             if (!footstepSource.isPlaying)

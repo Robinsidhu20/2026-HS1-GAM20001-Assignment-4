@@ -38,6 +38,8 @@ public class DialogueManager : MonoBehaviour
     private Coroutine typingCoroutine;
     private AudioClip typingClip;
     private AudioClip interactionClip;
+    private TextMeshProUGUI interactPrompt;
+    private int npcsInRange = 0;
 
     public bool IsDialogueActive => isDialogueActive;
 
@@ -106,7 +108,61 @@ public class DialogueManager : MonoBehaviour
         // Guarantee a visible "Press E to continue" prompt
         SetupContinuePrompt();
 
+        // On-screen "Press E to talk" hint shown when near an NPC
+        SetupInteractPrompt();
+
         dialoguePanel.SetActive(false);
+    }
+
+    private void SetupInteractPrompt()
+    {
+        GameObject canvasGO = new GameObject("InteractPromptCanvas");
+        Canvas canvas = canvasGO.AddComponent<Canvas>();
+        canvas.renderMode = RenderMode.ScreenSpaceOverlay;
+        canvas.sortingOrder = 700;
+
+        CanvasScaler scaler = canvasGO.AddComponent<CanvasScaler>();
+        scaler.uiScaleMode = CanvasScaler.ScaleMode.ScaleWithScreenSize;
+        scaler.referenceResolution = new Vector2(1920f, 1080f);
+        scaler.matchWidthOrHeight = 0.5f;
+
+        GameObject txtGO = new GameObject("InteractPrompt");
+        txtGO.transform.SetParent(canvasGO.transform, false);
+        interactPrompt = txtGO.AddComponent<TextMeshProUGUI>();
+        interactPrompt.text = "Press  E  to talk";
+        interactPrompt.alignment = TextAlignmentOptions.Center;
+        interactPrompt.fontSize = 40f;
+        interactPrompt.fontStyle = FontStyles.Bold;
+        interactPrompt.color = new Color(0.96f, 0.92f, 0.78f);
+        interactPrompt.raycastTarget = false;
+
+        RectTransform rt = interactPrompt.rectTransform;
+        rt.anchorMin = new Vector2(0.5f, 0f);
+        rt.anchorMax = new Vector2(0.5f, 0f);
+        rt.pivot = new Vector2(0.5f, 0f);
+        rt.sizeDelta = new Vector2(700f, 70f);
+        rt.anchoredPosition = new Vector2(0f, 90f);
+
+        interactPrompt.gameObject.SetActive(false);
+    }
+
+    // Called by NPCDialogueTrigger when the player enters/leaves talk range.
+    public void NpcRangeEntered()
+    {
+        npcsInRange++;
+        RefreshInteractPrompt();
+    }
+
+    public void NpcRangeExited()
+    {
+        npcsInRange = Mathf.Max(0, npcsInRange - 1);
+        RefreshInteractPrompt();
+    }
+
+    private void RefreshInteractPrompt()
+    {
+        if (interactPrompt == null) return;
+        interactPrompt.gameObject.SetActive(npcsInRange > 0 && !isDialogueActive);
     }
 
     // Creates the continue prompt if it's missing, and forces it into a
@@ -143,6 +199,7 @@ public class DialogueManager : MonoBehaviour
         currentLineIndex = 0;
         isDialogueActive = true;
         dialogueStartFrame = Time.frameCount;
+        RefreshInteractPrompt(); // hide "Press E to talk" while talking
 
         FreezePlayer(true);
 
@@ -284,6 +341,7 @@ public class DialogueManager : MonoBehaviour
         currentSpeakers = null;
 
         FreezePlayer(false);
+        RefreshInteractPrompt(); // show hint again if still near an NPC
     }
 
     // Stops the player from moving while talking. Disables the movement

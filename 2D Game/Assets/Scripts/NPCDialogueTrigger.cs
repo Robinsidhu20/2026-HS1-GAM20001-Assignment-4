@@ -15,6 +15,8 @@ public class NPCDialogueTrigger : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             playerInRange = true;
+            if (DialogueManager.Instance != null)
+                DialogueManager.Instance.NpcRangeEntered();
         }
     }
 
@@ -23,6 +25,8 @@ public class NPCDialogueTrigger : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             playerInRange = false;
+            if (DialogueManager.Instance != null)
+                DialogueManager.Instance.NpcRangeExited();
         }
     }
 
