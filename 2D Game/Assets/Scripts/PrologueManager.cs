@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using UnityEngine.InputSystem;
 using TMPro;
 using System.Collections;
 
@@ -178,8 +179,10 @@ public class PrologueManager : MonoBehaviour
 
     private void Update()
     {
+        if (Keyboard.current == null) return;
+
         // Enter/Return shows all text instantly and shows the continue button
-        if (Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.KeypadEnter))
+        if (Keyboard.current.enterKey.wasPressedThisFrame || Keyboard.current.numpadEnterKey.wasPressedThisFrame)
         {
             skipRequested = true;
             skipAllRequested = true;
@@ -206,7 +209,9 @@ public class PrologueManager : MonoBehaviour
             isTyping = false;
         }
         // Click or any other key skips current paragraph
-        else if (isTyping && (Input.GetMouseButtonDown(0) || Input.anyKeyDown))
+        else if (isTyping &&
+                 ((Mouse.current != null && Mouse.current.leftButton.wasPressedThisFrame)
+                  || Keyboard.current.anyKey.wasPressedThisFrame))
         {
             skipRequested = true;
         }
